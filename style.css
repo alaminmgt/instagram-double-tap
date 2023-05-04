@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Carter+One&family=Corinthia&family=Josefin+Sans:ital,wght@1,700&family=Jost:wght@100&family=Mulish:wght@300&family=Sansita+Swashed:wght@300&family=Source+Sans+Pro:ital,wght@0,200;1,200;1,300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sansita Swashed', cursive;
+}
+html{
+    font-size: 62.5%;
+}
+.container{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container h1{
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+}
+.innerdiv{}
+.innerdiv img{
+    width: 35rem;
+    height: 50rem;
+    box-shadow: 0rem 1rem 2rem .8rem rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    position: relative;
+}
+i.fa-solid.fa-heart {
+    position: absolute;
+    color: red;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: heartGrow .8s linear;
+}
+@keyframes heartGrow {
+    100% {
+        transform: scale(12);
+        opacity: 0;
+    }
+}
+@media(max-width:672px) {
+    .innerdiv img{
+        width: 25rem;
+        height: 32rem;
+    }
+}
